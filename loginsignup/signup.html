@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event-Management</title>
+
+    <link href="signup.css" rel="stylesheet" type="text/css" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCFUz3r715MP6jv5Lqc-c36tUhYcDrj_Xk",
+        authDomain: "ubit-ee68d.firebaseapp.com",
+        databaseURL: "https://ubit-ee68d.firebaseio.com",
+        projectId: "ubit-ee68d",
+        storageBucket: "ubit-ee68d.appspot.com",
+        messagingSenderId: "405233116993",
+        appId: "1:405233116993:web:7ac7b007287681158e63c0",
+        measurementId: "G-SF9ZJMY2FW",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/af.min.js"></script> -->
+
+    <script src="/loginsignup/signup.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+
+
+<div class="container">
+<div class="center">
+    <form>
+  
+    
+                <h1>Hello There!</h1>
+                <h2>find your <b style="color: rgb(70, 199, 255);"> Place</b></h2>
+                <div class="form-group">
+                  <hr>
+                  <div>Name</div>
+                  <div class="input"><input placeholder="New Users Only" id="fullname" /> <br /></div>
+                </div>
+                <div class="form-group">
+                  <div>Email</div>
+                  <div class="input"><input type="email" id="email" /> <br /></div>
+                </div>
+                <div class="form-group">
+                  <div>Password</div>
+                  <div class="input">
+                    <input type="password" id="password" /> <br /><br />
+                  </div>
+                </div>
+                <div class="form-group float-right" role="group">
+                  <button class="btn btn-primary btn-lg" onClick="login()">Login</button>
+                  <button class="btn btn-primary btn-lg" onClick="signup()">Signup</button>
+                </div>
+  
+  
+    </form>
+</div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
+</html>

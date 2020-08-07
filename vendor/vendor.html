@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Venders</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/vendor/vendor.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCFUz3r715MP6jv5Lqc-c36tUhYcDrj_Xk",
+        authDomain: "ubit-ee68d.firebaseapp.com",
+        databaseURL: "https://ubit-ee68d.firebaseio.com",
+        projectId: "ubit-ee68d",
+        storageBucket: "ubit-ee68d.appspot.com",
+        messagingSenderId: "405233116993",
+        appId: "1:405233116993:web:7ac7b007287681158e63c0",
+        measurementId: "G-SF9ZJMY2FW",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="vendor.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid nav-container">
+      <div class="navbar"><h1>Places</h1><div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span id="loggedemail">xyz@email.com</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="../index.html">Home</a>
+          <a class="dropdown-item" href ="../loginsignup/signup.html">Sign Out</a>
+
+        </div>
+      </div></div>
+    </div>
+
+    <h1>My Places-Dashboard</h1>
+    <a href="../Home/home.html">Our Venders</a>
+    <div>
+      <div class="row justify-content-around">
+        <div class="input">
+          <input type="text" id="name" placeholder="Enter your Name" required />
+        </div>
+        <div class="input">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="input">
+          <input
+            type="number"
+            id="contact"
+            placeholder="Enter your Contact Number"
+            required
+          />
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            id="location"
+            placeholder="Enter your Location"
+            required
+          />
+        </div>
+      </div>
+      <!-- <div class="input">
+        <input
+          type="text"
+          id="type"
+          placeholder="Enter your Service Type"
+          required
+        />
+      </div> -->
+      <div class="input top-buffer">
+        <select class="form-control" id="type">
+          <option value="Shadi Halls">Shadi Halls</option>
+          <option value="Parks">Workspace</option>
+          <option value="Farm-House">FarmHouse</option>
+        </select>
+      </div>
+      <div class="input">
+        <div class="input-group">
+          <span class="input-group">Image:</span>
+          <input
+            type="file"
+            accept="images/*"
+            multiple="false"
+            class="form-control"
+            id="imgInp"
+            placeholder="Upload Images"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <button onClick="saveInfo()">Save</button>
+    </div>
+    <div>
+      <table id="vender-table" class="table">
+        <thead>
+          <th>Name</th>
+          <th>Contact</th>
+          <th>Email</th>
+          <th>Location</th>
+          <th>Service-Type</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

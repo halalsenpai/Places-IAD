@@ -1,0 +1,57 @@
+.navbar{
+    background-color: rgb(70, 119, 255);
+    border: cyan 1px solid;
+    color: white;
+}
+.nav-container{
+    padding: 0px 0px;
+}
+.navrow{
+
+   text-align: center;
+}
+.card{
+    width: 250px;
+
+}
+/* EXP CAROUSEL */
+
+.carousel-caption {
+    color: rgb(255, 255, 255);
+
+    top: 10%;
+    bottom: auto;
+    
+    text-shadow: 4px 4px 10px black;
+    
+}
+.card{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.carousel p{
+    font-size: 150%;
+    
+}
+.carousel-inner{
+    height: 600px;
+}
+
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+
+.top-buffer { margin-top:45px; }

@@ -1,0 +1,14 @@
+.center {
+    margin: 10px auto;
+    width: 40%;
+    border: 10px solid rgb(70, 119, 255);
+    border-radius: 15px;
+    box-shadow: 1em 1em 0 0 white, 1.5em 1em 0 10px rgb(70, 119, 255) ;
+    padding: 80px;
+    background-color: white;
+
+  }
+  body{
+    background-image: url("/images/bg.png");
+
+  }
